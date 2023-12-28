@@ -8,15 +8,15 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "-I",
-                "${fileDirname}\\..\\include",
-                "..\\include\\*.c", 
-                "..\\src\\main.c", 
+                "${workspaceFolder}\\include",
+                "${workspaceFolder}\\include\\*.c", 
+                "${workspaceFolder}\\src\\main.c", 
                 "-o",
-                "${fileDirname}\\..\\bin\\a.exe",
+                "${workspaceFolder}\\bin\\a.exe",
                 "-fexec-charset=GBK"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
