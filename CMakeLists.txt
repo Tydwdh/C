@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.15)
 
 project(main)
 
+# 清除缓存
+execute_process(COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/CMakeFiles)
+execute_process(COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_BINARY_DIR}/CMakeCache.txt)
+
 add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
